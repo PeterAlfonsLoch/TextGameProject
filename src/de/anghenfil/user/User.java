@@ -12,6 +12,7 @@ public class User implements Serializable{
 	int health; //Actual Health
 	int ap; //Action Points -> = mana
 	int act_room; //Room where the player is
+	//Get/Set Methods:
 	public String getName() {
 		return name;
 	}
