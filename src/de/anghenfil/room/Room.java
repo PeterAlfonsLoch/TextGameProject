@@ -5,6 +5,7 @@ public class Room {
 	private int nextRoomN;
 	private int nextRoomS;
 	private int nextRoomE;
+	private int nextRoomW;
 	private String roomDescription;
 	public int getRoomID() {
 		return roomID;
@@ -35,5 +36,11 @@ public class Room {
 	}
 	public void setRoomDescription(String roomDescription) {
 		this.roomDescription = roomDescription;
+	}
+	public int getNextRoomW() {
+		return nextRoomW;
+	}
+	public void setNextRoomW(int nextRoomW) {
+		this.nextRoomW = nextRoomW;
 	}
 }

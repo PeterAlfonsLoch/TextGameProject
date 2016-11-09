@@ -14,7 +14,12 @@ public class RoomSQL {
 	        stmt = c.createStatement();
 	        ResultSet rs = stmt.executeQuery("SELECT * FROM rooms");
 	        while(rs.next()){
-	        	room.setRoomID(rs.getInt("roomID")); 	
+	        	room.setRoomID(rs.getInt("roomID"));
+	        	room.setNextRoomE(rs.getInt("nextRoomE"));
+	        	room.setNextRoomW(rs.getInt("nextRoomW"));
+	        	room.setNextRoomN(rs.getInt("nextRoomN"));
+	        	room.setNextRoomS(rs.getInt("nextRoomS"));
+	        	room.setRoomDescription(rs.getString("roomDescription"));
 	        }
 	        rs.close();
 	        stmt.close();
