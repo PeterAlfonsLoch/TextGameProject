@@ -12,7 +12,7 @@ public class User implements Serializable{
 	int health; //Actual Health
 	int ap; //Action Points -> = mana
 	int act_room; //Room where the player is
-	//Get/Set Methods:
+	//Get and Set Methods:
 	public String getName() {
 		return name;
 	}
@@ -20,10 +20,7 @@ public class User implements Serializable{
 		this.name = name;
 	}
 	public String getKlasse() {
-		return klasse; //Test
-	}
-	public void setKlasse(String klasse) {
-		this.klasse = klasse;
+		return klasse;
 	}
 	public String getRasse() {
 		return rasse;
