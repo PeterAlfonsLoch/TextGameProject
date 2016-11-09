@@ -20,7 +20,7 @@ public class User implements Serializable{
 		this.name = name;
 	}
 	public String getKlasse() {
-		return klasse;
+		return klasse; //Test
 	}
 	public void setKlasse(String klasse) {
 		this.klasse = klasse;
