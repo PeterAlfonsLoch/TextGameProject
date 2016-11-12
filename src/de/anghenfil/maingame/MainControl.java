@@ -49,7 +49,7 @@ public class MainControl {
 				RoomSQL.loadRoom(room.getNextRoomS());
 				TD.description(room.getRoomDescription());
 				break;
-			case "westen": //Test
+			case "westen":
 				System.out.println("Gehe nach Westen ...");
 				RoomSQL.loadRoom(room.getNextRoomW());
 				TD.description(room.getRoomDescription());
@@ -65,7 +65,8 @@ public class MainControl {
 		}
 	}
 	private static void commandExit() {
-		
+		TD.description("Du schläfst langsam ein und verlässt diese Welt.");
+		exit = true;
 	}
 	public static void commandHelp(){
 		
