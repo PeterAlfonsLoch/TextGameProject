@@ -5,14 +5,14 @@ The TextGameProject ist ein Spiel, welches nur in der Konsole gespielt wird. Es 
 ----------
 Funktionen
 -------------
-<b>Hauptmenü: </b>geplant
-<b>Updater: </b>geplant
-<b>Charaktererstellung: </b>vorläufig Abgeschlossen
-<b>Room-System (mit SQL): </b>in Arbeit
-<b>Hauptsteuerung: </b>in Arbeit
-<b>Item System (mit SQL): </b>geplant
-<b>Room Scripts: </b>geplant
-<b>Charaktermenü: </b>geplant
+<b>Hauptmenü: </b>geplant<br>
+<b>Updater: </b>geplant<br>
+<b>Charaktererstellung: </b>vorläufig Abgeschlossen<br>
+<b>Room-System (mit SQL): </b>in Arbeit<br>
+<b>Hauptsteuerung: </b>in Arbeit<br>
+<b>Item System (mit SQL): </b>geplant<br>
+<b>Room Scripts: </b>geplant<br>
+<b>Charaktermenü: </b>geplant<br>
 
 ----------
 FAQ
@@ -26,10 +26,10 @@ Gerne. Klone einfach diese Repo, arbeite mit und erstelle eine Pull-Request. Ein
 
 Aktuell, gibt es noch keine Vorabversion. Allerdings wird es in ca. einer Woche eine erste Vorabversion zum Download geben.
 
->**Vorabversion starten**
-> 1. Installiere Java, falls noch nicht geschehen.
-> 2. Öffne ein Terminal (oder die CMD unter Windows) und gehe in das Verzeichnis, in der die heruntergeladene .jar Datei liegt. (z.B. `cd C:\Users\XXX\Downloads`)
-> 3. Rufe `java -jar textgameproject.jar`auf.
+>**Vorabversion starten**<br>
+> 1. Installiere Java, falls noch nicht geschehen.<br>
+> 2. Öffne ein Terminal (oder die CMD unter Windows) und gehe in das Verzeichnis, in der die heruntergeladene .jar Datei liegt. (z.B. `cd C:\Users\XXX\Downloads`)<br>
+> 3. Rufe `java -jar textgameproject.jar`auf.<br>
 
  Es wird regelmäßig neue Vorabversionen geben, ihr könnt das Spiel aber natürlich auch selbst kompilieren.
 
