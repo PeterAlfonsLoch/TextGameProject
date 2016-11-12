@@ -49,7 +49,7 @@ public class MainControl {
 				RoomSQL.loadRoom(room.getNextRoomS());
 				TD.description(room.getRoomDescription());
 				break;
-			case "westen":
+			case "westen": //Test
 				System.out.println("Gehe nach Westen ...");
 				RoomSQL.loadRoom(room.getNextRoomW());
 				TD.description(room.getRoomDescription());
