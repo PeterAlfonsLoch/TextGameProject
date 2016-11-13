@@ -19,6 +19,8 @@ public class MainControl {
 			rawinput = rawinput.toLowerCase();
 			input = rawinput.split("\\s");
 			switch(input[0]){
+			case "commands":
+			case "hilfe":
 			case "help":
 				commandHelp();
 				break;
@@ -40,24 +42,40 @@ public class MainControl {
 		if(Objects.equals(input[1], "nach")){
 			switch(input[2]){
 			case "norden":
+				if(room.getNextRoomN() == 0){
+					TD.error("In nördlicher Richtung geht es hier nicht weiter.");
+				}else{
 				System.out.println("Gehe nach Norden ...");
 				RoomSQL.loadRoom(room.getNextRoomN());
 				TD.description(room.getRoomDescription());
+				}
 				break;
 			case "sueden":
+				if(room.getNextRoomS() == 0){
+					TD.error("In südlicher Richtung geht es hier nicht weiter.");
+				}else{
 				System.out.println("Gehe nach SÃ¼den ...");
 				RoomSQL.loadRoom(room.getNextRoomS());
 				TD.description(room.getRoomDescription());
+				}
 				break;
 			case "westen":
+				if(room.getNextRoomW() == 0){
+					TD.error("In westlicher Richtung geht es hier nicht weiter.");
+				}else{
 				System.out.println("Gehe nach Westen ...");
 				RoomSQL.loadRoom(room.getNextRoomW());
 				TD.description(room.getRoomDescription());
+				}
 				break;
 			case "osten":
+				if(room.getNextRoomE() == 0){
+					TD.error("In östlicher Richtung geht es hier nicht weiter.");
+				}else{
 				System.out.println("Gehe nach Osten ...");
 				RoomSQL.loadRoom(room.getNextRoomE());
 				TD.description(room.getRoomDescription());
+				}
 				break;
 			default:
 				TD.error();
