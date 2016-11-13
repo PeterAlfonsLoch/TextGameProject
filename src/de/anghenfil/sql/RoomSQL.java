@@ -14,7 +14,7 @@ public class RoomSQL {
 	        c = DriverManager.getConnection("jdbc:sqlite:data/rooms.db");
 	        
 	        stmt = c.createStatement();
-	        ResultSet rs = stmt.executeQuery("SELECT * FROM rooms");
+	        ResultSet rs = stmt.executeQuery("SELECT * FROM rooms"); //Change * later to the final columns
 	        while(rs.next()){
 	        	room.setRoomID(rs.getInt("roomID"));
 	        	room.setNextRoomE(rs.getInt("nextRoomE"));
@@ -52,5 +52,24 @@ public class RoomSQL {
         System.err.println( e.getClass().getName() + ": " + e.getMessage() );
         System.exit(0);
       }
+	}
+	public static boolean checkRoomID(int roomID){
+		boolean RoomIDValid = false;
+		Connection c = null;
+		
+		try{
+			Class.forName("org.sqlite.JDBC");
+			c = DriverManager.getConnection("jdbc:sqlite:data/rooms.db");
+			PreparedStatement ps = c.prepareStatement("SELECT * FROM rooms WHERE roomID = ?"); //Change * later to the final columns
+			ps.setInt(1, roomID);
+			ResultSet rs = ps.executeQuery();
+			if(!rs.next()){
+				RoomIDValid = true;
+			}
+		}catch(Exception e){
+	        System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+	        System.exit(0);
+		}
+		return RoomIDValid; //Returns true if RoomID doesn't exists already
 	}
 }
