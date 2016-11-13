@@ -53,8 +53,8 @@ public class RoomSQL {
         System.exit(0);
       }
 	}
-	public static boolean checkRoomID(int roomID){
-		boolean RoomIDValid = false;
+	public static boolean roomExist(int roomID){
+		boolean Roomexist = false;
 		Connection c = null;
 		
 		try{
@@ -63,13 +63,13 @@ public class RoomSQL {
 			PreparedStatement ps = c.prepareStatement("SELECT * FROM rooms WHERE roomID = ?"); //Change * later to the final columns
 			ps.setInt(1, roomID);
 			ResultSet rs = ps.executeQuery();
-			if(!rs.next()){
-				RoomIDValid = true;
+			if(rs.next()){
+				Roomexist = true;
 			}
 		}catch(Exception e){
 	        System.err.println( e.getClass().getName() + ": " + e.getMessage() );
 	        System.exit(0);
 		}
-		return RoomIDValid; //Returns true if RoomID doesn't exists already
+		return Roomexist;
 	}
 }

@@ -12,16 +12,18 @@ public class Editor {
 		Scanner sc = new Scanner(System.in);
 		
 		while(exit != true){
+			System.out.println("Raum erstellen, Raum editieren, oder Editor verlassen?");
 			choise = sc.nextLine();
 			choise = choise.toLowerCase();
 			switch(choise){
-			case "Raum erstellen":
+			case "raum erstellen":
 				RoomEdit.createRoom(); //Room Creation
 				break;
-			case "Raum editieren":
+			case "raum editieren":
 				//Room Editing comes here
 				break;
 			case "exit":
+			case "editor verlassen":
 				exit = true;
 				break;
 			default:
