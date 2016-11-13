@@ -13,6 +13,7 @@ Funktionen
 <b>Item System (mit SQL): </b>geplant<br>
 <b>Room Scripts: </b>geplant<br>
 <b>Charaktermenü: </b>geplant<br>
+<b>Kartengenerator: </b>geplant<br>
 
 ----------
 FAQ
