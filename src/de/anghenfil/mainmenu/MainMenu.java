@@ -10,7 +10,7 @@ public class MainMenu {
 		boolean createnew; //True if no save file exists
 		String decision;
 		Scanner sc = new Scanner(System.in);
-		
+		//Maybe later Swing GUI for starting game?
 		TD.input_question("Editor oder Spiel starten?");
 		decision = sc.next();
 		decision = decision.toLowerCase(); //Making input lower case
